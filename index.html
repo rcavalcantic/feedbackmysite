@@ -72,11 +72,44 @@
                     Serviços
                       </a>
                     </li>
-                    <li><a href="#price-page">Preço</a></li>
+                    <li>
+                      <a href="#price-page"
+                      onclick="ga('send', {hitType: 'event',
+                        eventCategory: 'Menu',
+                        eventAction: 'Click',
+                        eventLabel: 'Price'}
+                        );"
+                      >Preço
+                      </a>
+                    </li>
                     <!-- <li><a href="#team-page">Time</a></li> -->
-                    <li><a href="#clients-page">Clientes</a></li>
-                    <li><a href="#faq-page">FAQ</a></li>
-                    <li><a href="#contact-page">Contato</a></li>
+                    <li>
+                      <a href="#clients-page"
+                        onclick="ga('send', {hitType: 'event',
+                          eventCategory: 'Menu',
+                          eventAction: 'Click',
+                          eventLabel: 'Clients'}
+                          );"
+                        >Clientes
+                      </a>
+                    </li>
+                    <li><a href="#faq-page"
+                        onclick="ga('send', {hitType: 'event',
+                          eventCategory: 'Menu',
+                          eventAction: 'Click',
+                          eventLabel: 'FAQ'}
+                          );"
+                      >FAQ</a></li>
+                    <li>
+                      <a href="#contact-page"
+                        onclick="ga('send', {hitType: 'event',
+                          eventCategory: 'Menu',
+                          eventAction: 'Click',
+                          eventLabel: 'Contact'}
+                          );"
+                        >Contato
+                      </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -96,7 +129,13 @@
                     Empresas estão usando o <strong>Feedback as a Service</strong> pra validar seus produtos, landings pages, páginas de checkout,
                   carrinho de compras, fluxos, onboarding... Apenas nos diga.</p>
                   <div class="caption-button" data-animation="animated fadeInUp">
-                      <a href="#contact-page" class="button">Comece agora</a>
+                      <a href="#contact-page" class="button"
+                        onclick="ga('send', {hitType: 'event',
+                          eventCategory: 'MainAction',
+                          eventAction: 'Click',
+                          eventLabel: 'Comece Agora'}
+                          );"
+                      >Comece agora</a>
                   </div>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-5 text-right">
@@ -374,7 +413,14 @@
                             <li>Teste de Concorrência</li>
                         </ul>
                         <hr>
-                        <a href="#contact-form" class="button">Comprar</a>
+                        <a href="#contact-form" class="button"
+                          onclick="ga('send', {hitType: 'event',
+                            eventCategory: 'Buy',
+                            eventAction: 'Click',
+                            eventLabel: 'Plans'}
+                            );"
+                        >Comprar
+                        </a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-lg-4">
@@ -392,7 +438,14 @@
                             <li>Revisão de usuários comuns</li>
                         </ul>
                         <hr>
-                        <a href="#contact-form" class="button">Comprar</a>
+                        <a href="#contact-form" class="button"
+                          onclick="ga('send', {hitType: 'event',
+                            eventCategory: 'Buy',
+                            eventAction: 'Click',
+                            eventLabel: 'Plans'}
+                            );"
+                        >Comprar
+                        </a>
                     </div>
                 </div>
                 <!-- <div class="col-xs-12 col-sm-4">
@@ -875,17 +928,6 @@
             </div>
         </div>
     </footer>
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128520558-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-128520558-1');
-    </script>
 
     <!-- Google Analytics -->
     <script>
