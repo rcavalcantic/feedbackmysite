@@ -981,3 +981,15 @@ preloader
         opacity: 0;
     }
 }
+
+#logo {
+  color: #fff;
+}
+
+.heart--red {
+  color: red
+}
+
+.item--client {
+  width: 125px;
+}
